@@ -1,14 +1,13 @@
-# ML-Interview-Challenge
-A machine learning approach to predict the subjects of scientific papers
 # Scientific Paper Subject Prediction
+A machine learning approach to predict the subjects of scientific papers
 # Overview
 This project aims to develop a machine learning approach to predict the subjects of scientific papers using the Cora dataset. The dataset consists of 2708 scientific publications classified into one of seven classes: Case_Based, Genetic_Algorithms, Neural_Networks, Probabilistic_Methods, Reinforcement_Learning, Rule_Learning, and Theory. Each paper is described by a 0/1-valued word vector indicating the absence/presence of corresponding words from the dictionary.
 
 # Dataset
 The Cora dataset includes the following files:
 
-**cora.content:** Descriptions of papers in the format <paper_id> <word_attributes>+ <class_label>.
-**cora.cites:** Citation graph of the corpus in the format <ID of cited paper> <ID of citing paper>.
+- **cora.content:** Descriptions of papers in the format <paper_id> <word_attributes>+ <class_label>.
+- **cora.cites:** Citation graph of the corpus in the format <ID of cited paper> <ID of citing paper>.
 The task involves the following steps:
 
 # Code Description
@@ -23,9 +22,9 @@ The provided Python script Scientific_Papers_Classification.ipynb contains the f
 7. **Main Execution**: Loads the data, performs cross-validation, trains the model, evaluates its performance, saves predictions, and calculates the mean accuracy across all folds.
    
 # Files Included
-**scientific_paper_subject_prediction.ipynb:** Jupyter notebook containing the code for data loading, preprocessing, model development, evaluation, and prediction.
-**predictions.tsv:** Tab-separated values file containing the predicted subjects for each paper.
-**cora.content and cora.cites:** Original dataset files.
+- **scientific_paper_subject_prediction.ipynb:** Jupyter notebook containing the code for data loading, preprocessing, model development, evaluation, and prediction.
+- **predictions.tsv:** Tab-separated values file containing the predicted subjects for each paper.
+- **cora.content and cora.cites:** Original dataset files.
 
 # Dependencies
 1. numpy
