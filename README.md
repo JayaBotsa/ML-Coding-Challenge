@@ -32,7 +32,7 @@ The provided Python script Scientific_Papers_Classification.ipynb contains the f
 3. scikit-learn
 Install dependencies using the following command:
 
-'''**pip install numpy pandas scikit-learn** '''
+`pip install numpy pandas scikit-learn`
 
 # Author
 Jayalaxmi Botsa
