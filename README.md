@@ -7,31 +7,33 @@ This project aims to develop a machine learning approach to predict the subjects
 # Dataset
 The Cora dataset includes the following files:
 
-cora.content: Descriptions of papers in the format <paper_id> <word_attributes>+ <class_label>.
-cora.cites: Citation graph of the corpus in the format <ID of cited paper> <ID of citing paper>.
+**cora.content:** Descriptions of papers in the format <paper_id> <word_attributes>+ <class_label>.
+**cora.cites:** Citation graph of the corpus in the format <ID of cited paper> <ID of citing paper>.
 The task involves the following steps:
 
-Data Loading and Preprocessing: Load the dataset and preprocess it for model training.
-Model Development: Develop a machine learning approach to predict the subjects of papers.
-Evaluation: Evaluate the model's performance using 10-fold cross-validation and calculate the accuracy.
-Storing Predictions: Store the predictions in a tab-separated values (TSV) file.
-Documentation: Document the approach, implementation details, and results in this README file.
-# Execution
-To execute the approach:
+# Code Description
+The provided Python script Scientific_Papers_Classification.ipynb contains the following functions:
 
-Clone the repository.
-Run the Jupyter notebook scientific_paper_subject_prediction.ipynb to train the model, make predictions, and evaluate performance.
-View the generated prediction file predictions.tsv to examine the predicted subjects for each paper.
+1. **load_data()**: Loads the Cora dataset from the provided files and returns features representing word attributes (X) and class labels (y).
+2. **load_citation_graph()**: Loads the citation graph from the .cites file and returns a list of citation information.
+3. **split_dataset(X, y)**: Splits the dataset into train and test sets using Stratified K-Fold cross-validation.
+4. **train_and_predict(X_train, y_train, X_test)**: Trains a Multinomial Naive Bayes classifier using the training set (X_train, y_train) and makes predictions on the test set (X_test).
+5. **save_predictions(predictions, test_indices, y_true)**: Saves the predictions to a tab-separated values (TSV) file.
+6. **evaluate_accuracy(y_true, predictions)**: Calculates the accuracy of the predictions.
+7. **Main Execution**: Loads the data, performs cross-validation, trains the model, evaluates its performance, saves predictions, and calculates the mean accuracy across all folds.
+   
 # Files Included
 scientific_paper_subject_prediction.ipynb: Jupyter notebook containing the code for data loading, preprocessing, model development, evaluation, and prediction.
 predictions.tsv: Tab-separated values file containing the predicted subjects for each paper.
 cora.content and cora.cites: Original dataset files.
+
 # Dependencies
-numpy
-pandas
-scikit-learn
+1. numpy
+2. pandas
+3. scikit-learn
 Install dependencies using the following command:
 
-''' pip install numpy pandas scikit-learn '''
+'''**pip install numpy pandas scikit-learn** '''
+
 # Author
 Jayalaxmi Botsa
