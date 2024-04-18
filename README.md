@@ -23,9 +23,9 @@ The provided Python script Scientific_Papers_Classification.ipynb contains the f
 7. **Main Execution**: Loads the data, performs cross-validation, trains the model, evaluates its performance, saves predictions, and calculates the mean accuracy across all folds.
    
 # Files Included
-scientific_paper_subject_prediction.ipynb: Jupyter notebook containing the code for data loading, preprocessing, model development, evaluation, and prediction.
-predictions.tsv: Tab-separated values file containing the predicted subjects for each paper.
-cora.content and cora.cites: Original dataset files.
+**scientific_paper_subject_prediction.ipynb:** Jupyter notebook containing the code for data loading, preprocessing, model development, evaluation, and prediction.
+**predictions.tsv:** Tab-separated values file containing the predicted subjects for each paper.
+**cora.content and cora.cites:** Original dataset files.
 
 # Dependencies
 1. numpy
